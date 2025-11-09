@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop Playback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <template id="svg-icons">
+      <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-folder" viewBox="0 0 24 24">
+          <path d="M10 4l2 2h8a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h6z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24">
+          <path d="M6 5h4v14H6zm8 0h4v14h-4z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-stop" viewBox="0 0 24 24">
+          <path d="M6 6h12v12H6z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-fullscreen" viewBox="0 0 24 24">
+          <path d="M7 14H5v5h5v-2H7v-3zm12-9h-5v2h3v3h2V5zM7 7h3V5H5v5h2V7zm12 7h-2v3h-3v2h5v-5z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-exit-fullscreen" viewBox="0 0 24 24">
+          <path d="M7 7h3V5H5v5h2V7zm9-2v2h3v3h2V5h-5zm-9 9H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-volume" viewBox="0 0 24 24">
+          <path d="M7 9v6h3l4 4V5l-4 4H7zm9.5 3a2.5 2.5 0 00-1.5-2.29v4.58A2.5 2.5 0 0016.5 12zm0-5.5a5.5 5.5 0 010 11v-2a3.5 3.5 0 000-7v-2z" fill="currentColor" />
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 11h4v2h-6V7h2z" fill="currentColor" />
+        </symbol>
+      </svg>
+    </template>
+    <script src="renderer.js" type="module"></script>
+  </body>
+</html>

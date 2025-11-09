@@ -1,0 +1,34 @@
+{
+  "name": "loop-playback",
+  "version": "1.0.0",
+  "description": "Looping media player screensaver style app",
+  "main": "src/main/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder --mac --dir",
+    "package": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.example.loopplayback",
+    "productName": "LoopPlayback",
+    "files": [
+      "src/main/**",
+      "src/preload/**",
+      "src/renderer/**",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "mac": {
+      "category": "public.app-category.entertainment"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.6.4"
+  }
+}
